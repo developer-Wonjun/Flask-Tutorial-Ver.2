@@ -1,4 +1,5 @@
 import pandas as pd
+import random 
 
 def save(location, cleaness, built_in):
     idx = len(pd.read_csv("database.csv"))
@@ -24,7 +25,7 @@ def now_index():
 
 def load_house(idx):
     df = pd.read_csv("database.csv")
-    house_inf = df.iloc[idx]
+    house_info = df.iloc[idx]
     return house_info
 
 
