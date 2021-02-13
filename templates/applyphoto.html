@@ -1,4 +1,4 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>등록된 집 목록</title><style>
+ <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>사진 업로드 하기</title><style>
 /* webkit printing magic: print all background colors */
 html {
 	-webkit-print-color-adjust: exact;
@@ -624,5 +624,9 @@ blockquote {
 	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
 }
 	
-</style></head><body><article id="658cc25d-c677-44de-be16-79b5ebaefbee" class="page sans"><header><h1 class="page-title">등록된 집 목록</h1></header><div class="page-body"><p id="ebf5dd65-4c18-4612-a741-2c6cb3dab1ce" class=""></p>{% if length != 0%}{% for house in house_list %}<h2 id="d30371f5-b79a-4f97-a427-6ea9929c5a2b" class="">
-    {{house[1]}}</h2>{% endfor %}{% else %}<h2 id="c68e4d88-da8b-467d-9f70-29a0b3ad4de6" class="">집을 등록해주세요</h2>{% endif %}</div></article></body></html>
+</style></head><body><article id="ab38c924-33fd-48df-bbf4-b72c9f369937" class="page sans"><header><h1 class="page-title">사진 업로드 하기</h1><table class="properties"><tbody></tbody></table></header><div class="page-body"><p id="d45bede8-a5fa-422b-acc4-e0aadfbb7cfb" class="">사진 업로드하기</p><form method="POST" enctype="multipart/form-data" action="{{url_for('upload_done')}}">
+    <input type="file" name="file"/>
+    <input type="submit"/></form></div></article></body>
+
+     
+</html>
