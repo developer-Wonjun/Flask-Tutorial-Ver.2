@@ -16,7 +16,7 @@ def load_list():
     for i in range(len(df)):
         house_list.append(df.iloc[i].tolist())
     print(house_list)
-    # return house_list
+    return house_list
 
 def now_index():
     df = pd.read_csv("database.csv")
